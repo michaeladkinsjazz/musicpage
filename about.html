@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Michael Adkins</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap');
+
+  :root {
+    --bg: #ffffff;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --accent: #8B4A2A;
+    --border: #eeeeee;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAVIGATION */
+  nav {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; }
+  .nav-links a { color: var(--text-secondary); text-decoration: none; margin-left: 30px; font-size: 13px; }
+.nav-logo { 
+  font-family: 'Playfair Display', serif; 
+  font-weight: 700; 
+  font-size: 20px; 
+  text-decoration: none !important; /* This removes the underline */
+  color: black;
+}
+
+/* This ensures it stays clean even after being clicked */
+.nav-logo:visited, .nav-logo:hover, .nav-logo:active {
+  text-decoration: none !important;
+  color: black;
+}
+  /* HERO */
+  .about-hero {
+    padding: 100px 60px;
+    max-width: 1100px;
+  }
+
+  .about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 8vw, 80px);
+    line-height: 1.1;
+    margin-bottom: 30px;
+  }
+
+  /* SECTION WRAPPER */
+  .container { padding: 80px 60px; border-top: 1px solid var(--border); }
+  .section-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 40px; display: flex; gap: 10px; }
+
+  /* APPROACH (01) */
+  .grid-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .bio-text { font-size: 20px; font-weight: 300; color: var(--text-secondary); }
+  .bio-text b { color: var(--text-primary); font-weight: 500; }
+
+  /* DISCOGRAPHY (02) */
+  .disco-list { list-style: none; }
+  .disco-item {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    align-items: center;
+  }
+  .disco-item:first-child { border-top: 1px solid var(--border); }
+  .disco-item .title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--text-primary); }
+  .disco-item .label { color: var(--accent); font-weight: 500; }
+
+  /* ACHIEVEMENTS (03) */
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  .award-entry { font-size: 15px; }
+  .award-entry b { display: block; font-size: 18px; margin-bottom: 5px; }
+
+  /* STORY (04) */
+  .press-feature {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-style: italic;
+    line-height: 1.3;
+    max-width: 900px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 100px 60px;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-cta { font-family: 'Playfair Display', serif; font-size: 48px; text-decoration: none; color: var(--text-primary); }
+  .footer-details { text-align: right; color: var(--text-secondary); font-size: 14px; line-height: 2; }
+
+  @media (max-width: 850px) {
+    nav, .container, .footer { padding: 40px 30px; }
+    .grid-two-col, .disco-item { grid-template-columns: 1fr; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">MICHAEL ADKINS</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="discography.html">Discography</a>
+    <a href="pedagogy.html">Pedagogy</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<section class="about-hero">
+  <h1>A Legacy of Sound, Intent, and Discovery.</h1>
+</section>
+
+<div class="container">
+  <div class="section-label">/ The Artist (01)</div>
+  <div class="grid-two-col">
+    <p class="bio-text">
+      Michael Adkins is a professional saxophonist holding a <b>Doctor of Musical Arts (DMA)</b> degree. His career is defined by a "less is more" intentionality, rooted in the creative hubs of <b>New York and Boston</b>.
+    </p>
+    <p class="bio-text">
+      His work as both a performer and educator balances rigorous technical mastery with a deep commitment to the spontaneity of jazz improvisation.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section-label">/ Discography (02)</div>
+  <div class="disco-list">
+    <div class="disco-item">
+      <div class="title">Flaneur</div>
+      <div>w/ Paul Motian, Larry Grenadier, Russ Lossing</div>
+      <div class="label">HatHut Records / 2018</div>
+    </div>
+    <div class="disco-item">
+      <div class="title">Rotator</div>
+      <div>w/ Paul Motian, John Hebert, Russ Lossing</div>
+      <div class="label">HatHut Records / 2008</div>
+    </div>
+    <div class="disco-item">
+      <div class="title">Infotation</div>
+      <div>w/ Ian Froman, John Hebert</div>
+      <div class="label">Semblance Records / 2005</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section-label">/ Achievements (03)</div>
+  <div class="awards-grid">
+    <div class="award-entry">
+      <b>Jazz Album of the Year</b>
+      UK Wire Magazine for <i>Rotator</i>
+    </div>
+    <div class="award-entry">
+      <b>Top Ten Critics Poll</b>
+      Cadence Magazine for <i>Flaneur</i>
+    </div>
+    <div class="award-entry">
+      <b>Academic Honors</b>
+      Dean's List & Scholarship, New England Conservatory
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section-label">/ Story (04)</div>
+  <div class="press-feature">
+    "Adkins literally speaks through his horn with a soft-edged but full tone... reinforcing the adage that one can say much more by saying less."
+    <br>
+    <span style="font-size: 14px; font-family: 'Inter'; font-style: normal; color: var(--accent); letter-spacing: 2px; text-transform: uppercase;">— BUDD KOPMAN, AAJ</span>
+  </div>
+</div>
+
+<footer class="footer">
+  <div>
+    <div class="section-label">/ Collaboration (05)</div>
+    <a href="mailto:miadmusic@gmail.com" class="footer-cta">Contact.</a>
+  </div>
+  <div class="footer-details">
+    <p>miadmusic@gmail.com</p>
+    <p>617-595-2836</p>
+    <p style="margin-top:20px;">Boston / New York / Online</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discography | Michael Adkins</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap');
+
+  :root {
+    --bg: #ffffff;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --accent: #8B4A2A;
+    --border: #eeeeee;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; text-decoration: none; color: black;}
+  .nav-links a { color: var(--text-secondary); text-decoration: none; margin-left: 30px; font-size: 13px; }
+
+  /* HERO */
+  .disco-hero { padding: 100px 60px; max-width: 1100px; }
+  .disco-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 8vw, 80px); line-height: 1.1; margin-bottom: 30px; }
+
+  /* CATALOG GRID */
+  .container { padding: 80px 60px; border-top: 1px solid var(--border); }
+  .section-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 40px; display: flex; gap: 10px; }
+
+  .album-entry {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    margin-bottom: 120px;
+    align-items: start;
+  }
+
+  .album-art { 
+    aspect-ratio: 1/1; 
+    background-color: #f7f7f7; 
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .album-art img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s; }
+  .album-entry:hover .album-art img { filter: grayscale(0%); }
+
+  .album-info h2 { font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 10px; }
+  .album-label { color: var(--accent); font-weight: 500; text-transform: uppercase; letter-spacing: 1px; font-size: 12px; margin-bottom: 30px; display: block; }
+  
+  .personnel-list { list-style: none; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--border); }
+  .personnel-list li { font-size: 16px; margin-bottom: 5px; color: var(--text-secondary); }
+  .personnel-list b { color: var(--text-primary); font-weight: 500; }
+
+  .liner-notes { font-size: 15px; color: var(--text-secondary); font-style: italic; position: relative; }
+  .liner-notes::before { content: "“"; position: absolute; left: -25px; top: -10px; font-size: 40px; color: var(--border); }
+
+  /* FOOTER */
+  .footer { padding: 100px 60px; background: #fafafa; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
+  .footer-cta { font-family: 'Playfair Display', serif; font-size: 48px; text-decoration: none; color: var(--text-primary); }
+
+  @media (max-width: 900px) {
+    nav, .container, .footer, .disco-hero { padding: 40px 30px; }
+    .album-entry { grid-template-columns: 1fr; gap: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">MICHAEL ADKINS</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="discography.html">Discography</a>
+    <a href="pedagogy.html">Pedagogy</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<section class="disco-hero">
+  <h1>A Selected Archive of Recorded Works.</h1>
+</section>
+
+<div class="container">
+  <div class="section-label">/ Catalog (01)</div>
+
+  <div class="album-entry">
+    <div class="album-art"><img src="Flaneur_Cover.jpg" alt="Flaneur"></div>
+    <div class="album-info">
+      <span class="album-label">HatHut Records / hatOLOGY 723</span>
+      <h2>Flaneur</h2>
+      <ul class="personnel-list">
+        <li><b>Michael Adkins</b> Tenor Saxophone</li>
+        <li><b>Paul Motian</b> Drums</li>
+        <li><b>Larry Grenadier</b> Bass</li>
+        <li><b>Russ Lossing</b> Piano</li>
+      </ul>
+      <p class="liner-notes">
+        "Adkins' deep and penetrating tenor lines provide a near flawless vehicle for group-centric improvisation." — Jazz Review Magazine [cite: 33, 158]
+      </p>
+    </div>
+  </div>
+
+  <div class="album-entry">
+    <div class="album-art"><img src="Rotator_Cover.jpg" alt="Rotator"></div>
+    <div class="album-info">
+      <span class="album-label">HatHut Records / hatOLOGY 660</span>
+      <h2>Rotator</h2>
+      <ul class="personnel-list">
+        <li><b>Michael Adkins</b> Tenor Saxophone</li>
+        <li><b>Paul Motian</b> Drums</li>
+        <li><b>John Hébert</b> Bass</li>
+        <li><b>Russ Lossing</b> Piano</li>
+      </ul>
+      <p class="liner-notes">
+        "The best hour of contemporary jazz I've heard this year. Adkins sounds unlike anyone you ever heard before—but at the same time, like someone who's always been with us." — The Wire [cite: 13, 75, 223, 415]
+      </p>
+    </div>
+  </div>
+
+  <div class="album-entry">
+    <div class="album-art"><img src="Infotation_Cover.jpg" alt="Infotation"></div>
+    <div class="album-info">
+      <span class="album-label">Semblance Records / 2005</span>
+      <h2>Infotation</h2>
+      <ul class="personnel-list">
+        <li><b>Michael Adkins</b> Tenor Saxophone</li>
+        <li><b>Ian Froman</b> Drums</li>
+        <li><b>John Hébert</b> Bass</li>
+      </ul>
+      <p class="liner-notes">
+        "This is real music. Sumptuous and authoritative... a really great find of new music." — Nat Hentoff [cite: 79, 165, 321]
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div>
+    <div class="section-label">/ Listening (02)</div>
+    <a href="mailto:miadmusic@gmail.com" class="footer-cta">Inquire for full catalog.</a>
+  </div>
+  <div style="text-align: right; color: var(--text-secondary); font-size: 14px;">
+    <p>miadmusic@gmail.com</p>
+    <p>617-595-2836</p>
+    <p style="margin-top:20px;">© 2026 Michael Adkins. All Rights Reserved. [cite: 65, 304]</p>
+  </div>
+</footer>
+
+</body>
+</html>

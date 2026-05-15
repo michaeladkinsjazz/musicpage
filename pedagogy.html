@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedagogy | Michael Adkins</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap');
+  :root { --bg: #ffffff; --text-primary: #111111; --text-secondary: #666666; --accent: #8B4A2A; --border: #eeeeee; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background-color: var(--bg); color: var(--text-primary); font-family: 'Inter', sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  nav { padding: 30px 60px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); }
+  .nav-logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; text-decoration: none; color: black;}
+  .nav-links a { color: var(--text-secondary); text-decoration: none; margin-left: 30px; font-size: 13px; }
+  .container { padding: 80px 60px; border-top: 1px solid var(--border); }
+  .section-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 40px; display: block; }
+  .hero { padding: 100px 60px; max-width: 1000px; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(40px, 6vw, 80px); line-height: 1.1; margin-bottom: 30px; }
+  .grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+  .curriculum-item { margin-bottom: 40px; }
+  .curriculum-item h3 { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 15px; }
+  .curriculum-item p { color: var(--text-secondary); font-size: 17px; }
+  .footer { padding: 80px 60px; background: #fafafa; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
+  @media (max-width: 850px) { nav, .container, .hero { padding: 30px; } .grid-two { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">MICHAEL ADKINS</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="discography.html">Discography</a>
+    <a href="pedagogy.html">Pedagogy</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<section class="hero">
+  <span class="section-label">/ Instruction</span>
+  <h1>Developing an Authentic Voice through Intellectual Rigor.</h1>
+</section>
+
+<div class="container">
+  <div class="grid-two">
+    <div class="curriculum-item">
+      <span class="section-label">01 / Philosophy</span>
+      <h3>The Logic of the Phrase</h3>
+      <p>Drawing from my Doctor of Musical Arts (DMA) research, my instruction focuses on the "thematic phrase" and "elliptical phrasing". We explore how to say more by saying less, emphasizing the specific gravity of a single line[cite: 125, 200].</p>
+    </div>
+    <div class="curriculum-item">
+      <span class="section-label">02 / Technical Mastery</span>
+      <h3>Tone & Micro-tonality</h3>
+      <p>Specialized woodwind guidance to achieve an "exceptional, magisterial tone." [cite: 169] Students learn the intelligent use of micro-tonalities and tonal granulation to build a distinctive personal sound[cite: 166, 442, 464].</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid-two">
+    <div class="curriculum-item">
+      <span class="section-label">03 / Improvisation</span>
+      <h3>Group-Centric Development</h3>
+      <p>Instruction centered on group-centric improvisation and an elastic sense of time[cite: 157, 176]. We study the "telepathic interplay" between instruments to foster spontaneous composition[cite: 137, 176].</p>
+    </div>
+    <div class="curriculum-item">
+      <span class="section-label">04 / Locations</span>
+      <h3>Boston & New York Studio</h3>
+      <p>Elite private instruction is available in the creative hubs of Boston and New York, as well as online for advanced international students.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="contact.html" style="font-family: 'Playfair Display', serif; font-size: 40px; text-decoration: none; color: black;">Book a Lesson.</a>
+  <div style="text-align: right; color: var(--text-secondary); font-size: 14px;">
+    <p>miadmusic@gmail.com</p>
+    <p>617-595-2836</p>
+  </div>
+</footer>
+
+</body>
+</html>

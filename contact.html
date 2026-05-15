@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Michael Adkins</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap');
+
+  :root {
+    --bg: #ffffff;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --accent: #8B4A2A;
+    --border: #eeeeee;
+    --input-bg: #fcfcfc;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAVIGATION */
+  nav {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; text-decoration: none; color: black;}
+  .nav-links a { color: var(--text-secondary); text-decoration: none; margin-left: 30px; font-size: 13px; }
+
+  /* HERO */
+  .contact-hero { padding: 100px 60px; max-width: 1100px; }
+  .contact-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 8vw, 80px); line-height: 1.1; margin-bottom: 30px; }
+
+  /* SECTION WRAPPER */
+  .container { padding: 80px 60px; border-top: 1px solid var(--border); }
+  .section-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 40px; display: flex; gap: 10px; }
+
+  /* CONTACT GRID */
+  .grid-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 100px;
+    align-items: start;
+  }
+
+  .direct-info h3 { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 30px; }
+  .info-item { margin-bottom: 40px; }
+  .info-item span { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 10px; }
+  .info-item p, .info-item a { font-size: 20px; color: var(--text-primary); text-decoration: none; }
+  .info-item a:hover { color: var(--accent); }
+
+  /* FORM STYLING */
+  .form-container { background: var(--bg); }
+  .form-group { margin-bottom: 30px; }
+  .form-group label { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; color: var(--text-secondary); }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 18px;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+    color: var(--text-primary);
+  }
+
+  input:focus, textarea:focus { outline: none; border-color: var(--accent); background: #fff; }
+
+  .submit-btn {
+    background: var(--text-primary);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  .submit-btn:hover { background: var(--accent); }
+
+  /* FOOTER */
+  .footer {
+    padding: 60px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 850px) {
+    nav, .container, .contact-hero { padding: 40px 30px; }
+    .grid-two-col { grid-template-columns: 1fr; gap: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">MICHAEL ADKINS</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="discography.html">Discography</a>
+    <a href="pedagogy.html">Pedagogy</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav><section class="contact-hero">
+  <h1>Available for Recordings, Performance & Elite Instruction.</h1>
+</section>
+
+<div class="container">
+  <div class="section-label">/ Connectivity (01)</div>
+  <div class="grid-two-col">
+    
+    <div class="direct-info">
+      <h3>Direct Outreach</h3>
+      <div class="info-item">
+        <span>Booking & Sessions</span>
+        <a href="mailto:miadmusic@gmail.com">miadmusic@gmail.com</a>
+      </div>
+      <div class="info-item">
+        <span>Studio Inquiries</span>
+        <p>617-595-2836</p>
+      </div>
+      <div class="info-item">
+        <span>Base of Operations</span>
+        <p>New York / Boston / Online</p>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label>Inquiry Type</label>
+          <select name="type">
+            <option>Performance / Tour Booking</option>
+            <option>Session / Recording Request</option>
+            <option>DMA-Level Private Instruction</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Project or Lesson Goals</label>
+          <textarea name="message" rows="6"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  &copy; 2026 Michael Adkins. All Rights Reserved.
+</footer>
+
+</body>
+</html>
